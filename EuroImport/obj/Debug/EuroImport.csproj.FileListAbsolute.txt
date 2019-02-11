@@ -1,0 +1,23 @@
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\bin\Debug\EuroImport.exe.config
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\bin\Debug\EuroImport.exe
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\bin\Debug\EuroImport.pdb
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\Debug\EuroImport.csprojResolveAssemblyReference.cache
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\Debug\EuroImport.csproj.ResolveComReference.cache
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\Debug\EuroImport.Properties.Resources.resources
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\Debug\EuroImport.csproj.GenerateResource.Cache
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\Debug\EuroImport.exe
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\Debug\EuroImport.pdb
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\Debug\NLog.config
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\Debug\EuroImport.exe.config
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\Debug\EuroImport.exe
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\Debug\EuroImport.pdb
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\Debug\Newtonsoft.Json.dll
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\Debug\NLog.dll
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\Debug\Newtonsoft.Json.xml
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\Debug\NLog.xml
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debug\EuroImport.csproj.ResolveComReference.cache
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debug\EuroImport.FrmMain.resources
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debug\EuroImport.Properties.Resources.resources
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debug\EuroImport.csproj.GenerateResource.Cache
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debug\EuroImport.exe
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debug\EuroImport.pdb

@@ -1,0 +1,52 @@
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.csprojResolveAssemblyReference.cache
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\NLog.config
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\EuroImportTests.dll
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\EuroImportTests.pdb
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\EuroImport.exe
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\NLog.dll
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\EuroImport.pdb
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\NLog.xml
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.dll
+C:\Users\castro-weizman\Documents\Visual Studio 2015\Projects\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.pdb
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.csprojResolveAssemblyReference.cache
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.pdb
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\NLog.config
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\EuroImportTests.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\EuroImportTests.pdb
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\EuroImport.exe
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\NLog.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\EuroImport.pdb
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\NLog.xml
+C:\Users\castro-weizman\Dropbox\ייבוא\EuroImport\EuroImportTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\NLog.config
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\EuroImportTests.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\EuroImportTests.pdb
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\EuroImport.exe
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\NLog.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\EuroImport.pdb
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\NLog.xml
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.csprojResolveAssemblyReference.cache
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.dll
+C:\Users\castro-weizman\Dropbox\ייבוא\Developer\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.pdb
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\NLog.config
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\EuroImportTests.dll
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\EuroImportTests.pdb
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\EuroImport.exe
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\NLog.dll
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\EuroImport.pdb
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\NLog.xml
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.csprojResolveAssemblyReference.cache
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.dll
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.pdb

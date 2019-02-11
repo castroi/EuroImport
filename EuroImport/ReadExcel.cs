@@ -13,7 +13,7 @@ namespace EuroImport
 {
     public class ReadExcel
     {
-        public static List<string> FieldsNames = new List<string> {"קוד חלופי", "מחלקה", "קבוצה", "קבוצת משנה", "ספק", "דגם", "שם דגם", "צבע", "שם מידה", "מחיר 1", "מחיר 2", "יתרת מלאי", "הערות","קטגוריות נוספות","מיקום" };
+        public static List<string> FieldsNames = new List<string> {"קוד פריט", "מחלקה", "קבוצה", "קבוצת משנה", "ספק", "דגם", "שם דגם", "צבע", "שם מידה", "מחיר 1", "מחיר 2", "יתרת מלאי", "הערות","קטגוריות נוספות","מיקום" };
         protected Dictionary<string, int> columnIndexDictionary = new Dictionary<string, int>();
         public IEnumerable<Inventory> ReadExcelToTable(string path)
         {
@@ -42,7 +42,7 @@ namespace EuroImport
                 {
                     inventories.Add(new Inventory
                     {
-                        SKU = set.Tables[0].Rows[index][columnIndexDictionary["קוד חלופי"]].ToString(),
+                        SKU = set.Tables[0].Rows[index][columnIndexDictionary["קוד פריט"]].ToString(),
                         GENDER = set.Tables[0].Rows[index][columnIndexDictionary["מחלקה"]].ToString(),
                         CATEGORY = set.Tables[0].Rows[index][columnIndexDictionary["קבוצה"]].ToString(),
                         SUB_CATEGORY = set.Tables[0].Rows[index][columnIndexDictionary["קבוצת משנה"]].ToString(),

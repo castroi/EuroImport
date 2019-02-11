@@ -1,0 +1,8 @@
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\bin\x64\Debug\EuroImport.exe.config
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\x64\Debug\EuroImport.csproj.ResolveComReference.cache
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\bin\x64\Debug\EuroImport.exe
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\bin\x64\Debug\EuroImport.pdb
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\x64\Debug\EuroImport.Properties.Resources.resources
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\x64\Debug\EuroImport.csproj.GenerateResource.Cache
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\x64\Debug\EuroImport.exe
+c:\users\castro-weizman\documents\visual studio 2015\Projects\EuroImport\EuroImport\obj\x64\Debug\EuroImport.pdb
