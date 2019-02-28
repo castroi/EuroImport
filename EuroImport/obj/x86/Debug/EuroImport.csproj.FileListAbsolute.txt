@@ -56,4 +56,4 @@ C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\x86\
 C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\x86\Debug\EuroImport.csproj.GenerateResource.Cache
 C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\x86\Debug\EuroImport.exe
 C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\x86\Debug\EuroImport.pdb
-C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\x86\Debug\EuroImport.csprojResolveAssemblyReference.cache
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\x86\Debug\HeaderNames.json

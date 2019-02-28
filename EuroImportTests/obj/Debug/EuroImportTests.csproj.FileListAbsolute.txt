@@ -50,3 +50,4 @@ C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin
 C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.csprojResolveAssemblyReference.cache
 C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.dll
 C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\obj\Debug\EuroImportTests.pdb
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImportTests\bin\Debug\HeaderNames.json

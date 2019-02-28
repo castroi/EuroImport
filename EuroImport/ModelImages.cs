@@ -13,7 +13,7 @@ namespace EuroImport
         {
             Dictionary<string, int> models = new Dictionary<string, int>();
             var files = Directory.GetFiles(imagesFolder, "*.jpg");
-            var grouped = files.OrderBy(c => c).GroupBy(c => c.Split('\\').Last().Split('_').ElementAt(0));
+            var grouped = files.OrderBy(c => c).GroupBy(c => c.Split('\\').Last().Split('_').ElementAt(0).ToUpper());
             foreach (var item in grouped)
                 models.Add(item.Key.ToUpper(), item.Count());
             return models;

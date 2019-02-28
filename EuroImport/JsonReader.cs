@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -17,6 +18,11 @@ namespace EuroImport
                 var json = wc.DownloadString(url);
                 return JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
             }
+        }
+        public HeaderNames ReadHeaderNames(string fileFullPath)
+        {
+            var text = File.ReadAllText(fileFullPath);
+            return JsonConvert.DeserializeObject<HeaderNames>(text);
         }
     }
 }

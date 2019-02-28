@@ -16,11 +16,13 @@ namespace EuroImport
     public partial class FrmMain : Form
     {
         protected ExportCSV export;
+        private string headerNamesFile;
         public FrmMain()
         {
             InitializeComponent();
             txtFilePath.Text = Settings.Default.FileFolderDefault;
             txtImagesFolder.Text = Settings.Default.ImagesFolderDefault;
+            headerNamesFile = Settings.Default.HeaderNamesFile;
             export = new EuroImport.ExportCSV();
         }
 
@@ -54,7 +56,7 @@ namespace EuroImport
         {
             try
             {
-                ReadExcel read = new EuroImport.ReadExcel();
+                ReadExcel read = new EuroImport.ReadExcel(headerNamesFile);
                 IEnumerable<Inventory> inventories = read.ReadExcelToTable(txtFilePath.Text);
                 ModelImages modelImagesControl = new EuroImport.ModelImages();
                 List<string> missingImages = new List<string>();
@@ -89,6 +91,10 @@ namespace EuroImport
             catch (ColumnMissingException columnEX)
             {
                 BuildMessageBox(string.Format("חסרה עמודה '{0}' בקובץ אקסל", columnEX.Message));
+            }
+            catch (JsonHeaderNameEmptyException columnEX)
+            {
+                BuildMessageBox(string.Format("חסר שם עברי של עמודה '{0}' בקובץ JSON", columnEX.Message));
             }
             catch (Exception ex)
             {

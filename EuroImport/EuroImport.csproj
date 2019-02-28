@@ -98,6 +98,8 @@
   <ItemGroup>
     <Compile Include="CombineValues.cs" />
     <Compile Include="DataValidation.cs" />
+    <Compile Include="Exceptions\JsonHeaderNameEmptyException.cs" />
+    <Compile Include="LoadExcelColumnNames.cs" />
     <Compile Include="Exceptions\ColumnMissingException.cs" />
     <Compile Include="Exceptions\LoaderException.cs" />
     <Compile Include="Exceptions\SlugsException.cs" />
@@ -138,6 +140,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <None Include="HeaderNames.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

@@ -13,8 +13,11 @@ namespace EuroImport
 {
     public class ReadExcel
     {
-        public static List<string> FieldsNames = new List<string> {"קוד פריט", "מחלקה", "קבוצה", "קבוצת משנה", "ספק", "דגם", "שם דגם", "צבע", "שם מידה", "מחיר 1", "מחיר 2", "יתרת מלאי", "הערות","קטגוריות נוספות","מיקום" };
-        protected Dictionary<string, int> columnIndexDictionary = new Dictionary<string, int>();
+        string headerNameFile;
+        public ReadExcel(string headerNameFile)
+        {
+            this.headerNameFile = headerNameFile;
+        }
         public IEnumerable<Inventory> ReadExcelToTable(string path)
         {
 
@@ -29,35 +32,36 @@ namespace EuroImport
                 DataTable sheetsName = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, new object[] { null, null, null, "Table" });
 
                 //Get the First Sheet Name
-                string firstSheetName = "ראשי$";// sheetsName.Rows[0][2].ToString();
+                string firstSheetName = "ראשי$";
 
                 //Query String 
                 string sql = string.Format("SELECT * FROM [{0}]", firstSheetName);
                 OleDbDataAdapter ada = new OleDbDataAdapter(sql, connstring);
                 DataSet set = new DataSet();
                 ada.Fill(set);
-                CheckColumnsExist(set.Tables[0]);
                 List<Inventory> inventories = new List<EuroImport.Inventory>();
+                HeaderNames headersNamesFromJson = LoadExcelColumnNames.Load(headerNameFile);
+                ValidateHeaders(set.Tables[0], headersNamesFromJson);
+                FixColumnHeaders(set.Tables[0]);
                 for (int index = 1; index < set.Tables[0].Rows.Count; index++)
                 {
                     inventories.Add(new Inventory
                     {
-                        SKU = set.Tables[0].Rows[index][columnIndexDictionary["קוד פריט"]].ToString(),
-                        GENDER = set.Tables[0].Rows[index][columnIndexDictionary["מחלקה"]].ToString(),
-                        CATEGORY = set.Tables[0].Rows[index][columnIndexDictionary["קבוצה"]].ToString(),
-                        SUB_CATEGORY = set.Tables[0].Rows[index][columnIndexDictionary["קבוצת משנה"]].ToString(),
-                        //MAIN_GROUP = set.Tables[0].Rows[index]["קבוצת איחוד"].ToString(),
-                        BRAND = set.Tables[0].Rows[index][columnIndexDictionary["ספק"]].ToString(),
-                        MODEL = set.Tables[0].Rows[index][columnIndexDictionary["דגם"]].ToString(),
-                        MODEL_NAME = set.Tables[0].Rows[index][columnIndexDictionary["שם דגם"]].ToString(),
-                        COLOR = set.Tables[0].Rows[index][columnIndexDictionary["צבע"]].ToString(),
-                        SIZE = set.Tables[0].Rows[index][columnIndexDictionary["שם מידה"]].ToString(),
-                        REGULAR_PRICE = set.Tables[0].Rows[index][columnIndexDictionary["מחיר 1"]].ToString(),
-                        SALE_PRICE = set.Tables[0].Rows[index][columnIndexDictionary["מחיר 2"]].ToString(),
-                        STOCK = set.Tables[0].Rows[index][columnIndexDictionary["יתרת מלאי"]].ToString(),
-                        REMARKS = set.Tables[0].Rows[index][columnIndexDictionary["הערות"]].ToString(),
-                        ADDITION_CATEGORY = set.Tables[0].Rows[index][columnIndexDictionary["קטגוריות נוספות"]].ToString(),
-                        LOCATION = set.Tables[0].Rows[index][columnIndexDictionary["מיקום"]].ToString()
+                        SKU = set.Tables[0].Rows[index][headersNamesFromJson.SKU].ToString(),
+                        GENDER = set.Tables[0].Rows[index][headersNamesFromJson.Gender].ToString(),
+                        CATEGORY = set.Tables[0].Rows[index][headersNamesFromJson.Category].ToString(),
+                        SUB_CATEGORY = set.Tables[0].Rows[index][headersNamesFromJson.SubCategory].ToString(),
+                        BRAND = set.Tables[0].Rows[index][headersNamesFromJson.Brand].ToString(),
+                        MODEL = set.Tables[0].Rows[index][headersNamesFromJson.Model].ToString(),
+                        MODEL_NAME = set.Tables[0].Rows[index][headersNamesFromJson.ModelName].ToString(),
+                        COLOR = set.Tables[0].Rows[index][headersNamesFromJson.Color].ToString(),
+                        SIZE = set.Tables[0].Rows[index][headersNamesFromJson.Size].ToString(),
+                        REGULAR_PRICE = set.Tables[0].Rows[index][headersNamesFromJson.RegularPrice].ToString(),
+                        SALE_PRICE = set.Tables[0].Rows[index][headersNamesFromJson.SalePrice].ToString(),
+                        STOCK = set.Tables[0].Rows[index][headersNamesFromJson.Stock].ToString(),
+                        REMARKS = set.Tables[0].Rows[index][headersNamesFromJson.Remarks].ToString(),
+                        ADDITION_CATEGORY = set.Tables[0].Rows[index][headersNamesFromJson.AdditionCategory].ToString(),
+                        LOCATION = set.Tables[0].Rows[index][headersNamesFromJson.Location].ToString()
                     });
                 }
                 return inventories.Where(c=>string.IsNullOrEmpty(c.MODEL) == false 
@@ -66,18 +70,25 @@ namespace EuroImport
             }
         }
 
-        private void CheckColumnsExist(DataTable dataTable)
+        private void FixColumnHeaders(DataTable dataTable)
         {
-            foreach (var columnName in FieldsNames)
+            var headers = dataTable.Rows[0].ItemArray;
+            for (int index = 0; index < dataTable.Columns.Count; index++)
             {
-                if (dataTable.Rows[0].ItemArray.FirstOrDefault(c=>c.ToString().Contains(columnName)) == null)
-                    throw new ColumnMissingException(columnName);
+                var value = headers[index].ToString();
+                if(string.IsNullOrEmpty(value) == false)
+                    dataTable.Columns[index].ColumnName = value;
             }
-
-            for (int index = 0; index < dataTable.Rows[0].ItemArray.Length; index++)
+        }
+        private void ValidateHeaders(DataTable dataTable, HeaderNames names)
+        {
+            var properties = names.GetType().GetProperties();
+            foreach (var property in properties)
             {
-                string columnName = dataTable.Rows[0].ItemArray[index].ToString();
-                columnIndexDictionary.Add(columnName, index);
+                var name = property.GetValue(names, new object[] { }).ToString();
+                var findName = dataTable.Rows[0].ItemArray.FirstOrDefault(i => i.Equals(name) == true);
+                if (findName == null)
+                    throw new ColumnMissingException(name);
             }
         }
     }

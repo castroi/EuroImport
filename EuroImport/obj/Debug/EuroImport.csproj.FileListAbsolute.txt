@@ -21,3 +21,4 @@ C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debu
 C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debug\EuroImport.csproj.GenerateResource.Cache
 C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debug\EuroImport.exe
 C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\obj\Debug\EuroImport.pdb
+C:\Users\castro-weizman\Dropbox\shoes24\Developer\EuroImport\EuroImport\bin\Debug\HeaderNames.json

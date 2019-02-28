@@ -1,0 +1,18 @@
+﻿{
+  "SKU": "קוד פריט",
+  "Gender": "מחלקה",
+  "Category": "קבוצה",
+  "SubCategory": "קבוצת משנה",
+  "Brand": "ספק",
+  "Model": "דגם",
+  "ModelName": "שם דגם",
+  "Color": "צבע",
+  "Size": "שם מידה",
+  "RegularPrice": "מחיר 1",
+  "SalePrice": "מחיר 2",
+  "Stock": "יתרת מלאי",
+  "Remarks": "הערות",
+  "AdditionCategory": "קטגוריות נוספות",
+  "Location": "מיקום"
+}
+      
